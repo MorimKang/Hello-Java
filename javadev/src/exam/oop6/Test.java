@@ -2,7 +2,7 @@ package exam.oop6;
 
 public class Test {
 	private static Test test = null;
-	//그냥이렇게해도됨1//private static Test test = new Test();
+	//그냥이렇게해도됨1//private static final Test test = new Test();
 	
 	private Test() { 
 		

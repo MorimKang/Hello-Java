@@ -1,13 +1,13 @@
 package exam.oop3;
 
 public class StudentDTO { //DTO == data transfer object
-	private String name;
+	private String name; //필드. 멤버변수.
 	private int kor;
 	private int eng;
 	private int mat;
 	private int phi;
 	
-	public String getName() {
+	public String getName() { //behavior
 		return name;
 	}
 	public void setName(String name) {
