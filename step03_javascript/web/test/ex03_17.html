@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var kor, jpn, sum;
+
+	do {
+		kor = prompt("국어점수를 입력하시요.", "");
+		if (kor<0||kor >100) {
+			alert("0-100 사이의 숫자를 입력하세요.");
+		}
+	} while (kor<0||kor>100);
+
+	do {
+		jpn = prompt("일어점수를 입력하시요.", "");
+		if (kor<0||kor >100) {
+			alert("0-100 사이의 숫자를 입력하세요.");
+		}
+	} while (jpn<0||jpn>100);
+
+	sum = parseInt(kor) + parseInt(jpn);
+
+	document.write("합계: " + sum);
+</script>
+</head>
+<body>
+
+</body>
+</html>
