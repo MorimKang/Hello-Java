@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">
+.box{
+width: 100px; 
+height:100px; 
+border:1px solid; 
+box-sizing: border-box;}
+
+.box:nth-child(1){
+padding: 20px;
+ margin-right:10px;
+ 
+position:static;
+}
+.box:nth-child(2){
+position:static;
+}
+.box:nth-child(3){
+clear:both;
+}
+</style>
+</head>
+<body>
+	<div>
+	<div class="box"> 박스1</div>
+	<div class="box"> 박스2</div>
+	<div class="box"> 박스3</div>
+	</div>
+</body>
+</html>
