@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="/edu/get.do" method="get">
+   이름 : <input type="text"  name="irum"><br>
+   암호 : <input type="text"  name="amho"><br>
+   <input type="submit"  value="전송">
+   <input type="reset"  value="취소">
+</form>
+</body>
+</html>
+<!-- 
+get 로보내면: doGet()로 받음
+post 로보내면: doPost() 
+
+error: 404(페이지 못찾음) 405(메서드 못찾음) 500(소스오류)
+
+GET방식(queryString으로 URL에 Mapping 되어 전송
+http://localhost:8080/edu/get.do?irum=morim&amho=0309
+-->

@@ -1,0 +1,34 @@
+package com.jpn.method;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+@WebServlet(name = "GET", urlPatterns = { "/get.do" })
+public class GetServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		//1.한글처리
+		response.setContentType("text/html;charset=UTF-8");
+		
+		//2.데이터 받아오기
+		String name=request.getParameter("irum");
+		String pass=request.getParameter("amho");
+		
+		
+		//3.출력
+		response.getWriter().append("<html><head><title></title></head>");
+		response.getWriter().append("<body>");
+		
+		response.getWriter().append("이름: "+name+"<br>");
+		response.getWriter().append("암호: "+pass+"<br>");
+		
+		response.getWriter().append("<a href='/edu/getTest.html'>다음으로</a>");
+		response.getWriter().append("</body></html>");
+	}
+
+}
